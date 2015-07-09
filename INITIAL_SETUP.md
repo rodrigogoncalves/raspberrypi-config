@@ -36,9 +36,18 @@ userdel -r pi
 visudo
 ```
 
-## .bashrc featuring a Raspberry Pi colored hostname
+## Terminal featuring a Raspberry Pi colored hostname
+
+### .bashrc
 ```shell
 alias ls='ls --color=auto'
 alias vi="vim"
 PS1='\[\e[0;32m\]\u\[\e[0;34m\]@\[\e[38;5;197m\]\h\[\e[m\] \[\e[0;34m\]\w\[\e[m\] \[\e[1;32m\]\$\[\e[m\] \[\e[1;37m\]\[\e[m\]'
+```
+
+### .bash_profile
+```shell
+if [ -f ~/.bashrc ]; then
+	. ~/.bashrc
+fi
 ```
