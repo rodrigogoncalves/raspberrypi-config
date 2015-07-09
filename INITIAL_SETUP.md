@@ -27,6 +27,15 @@ sudo vi /etc/hosts
 sudo reboot
 ```
 
+## User management
+
+```shell
+useradd -m rodrigo
+passwd rodrigo
+userdel -r pi
+visudo
+```
+
 ## .bashrc featuring a Raspberry Pi colored hostname
 ```shell
 alias ls='ls --color=auto'
