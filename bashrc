@@ -3,7 +3,7 @@
 
 alias ls='ls --color=auto'
 alias vi="vim"
-PS1='\[\e[0;32m\]\u\[\e[0;34m\]@\[\e[0;32m\]\h\[\e[m\] \[\e[0;34m\]\w\[\e[m\] \[\e[1;32m\]\$\[\e[m\] \[\e[1;37m\]\[\e[m\]'
+PS1='\[\e[0;32m\]\u\[\e[0;34m\]@\[\e[0;35m\]\h\[\e[m\] \[\e[0;34m\]\w\[\e[m\] \[\e[1;32m\]\$\[\e[m\] \[\e[1;37m\]\[\e[m\]'
 
 # Arch latest news
 if [ "$PS1" ] && [[ $(ping -c1 www.google.com 2>&-) ]]; then
